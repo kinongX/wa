@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grup WhatsApp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grup WhatsApp - Luar Angkasa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #0d0d2b, #1a1a40);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      background-image: url('https://images.unsplash.com/photo-1476287801980-73a1f27c71c4?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 10px;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .buttons a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255,255,255,0.4);
+    }
+
+    .login {
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    }
+
+    .register {
+      background: linear-gradient(45deg, #42e695, #3bb2b8);
+    }
+
+    /* Stars animation */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://i.gifer.com/7plK.gif') repeat;
+      opacity: 0.3;
+      z-index: -1;
+    }
+  </style>
 </head>
 <body>
-    <h1>Selamat datang di Grup WhatsApp!</h1>
-    <p>Untuk bergabung, klik tautan berikut:</p>
-    <div class="REKOMENDASI">
-  <a href="https://anti-badai.org/random/desalebanisuko.gresikkab/" rel="nofollow noreferrer" class="register">LOGIN</a>
-  <a href="https://anti-badai.org/random/desalebanisuko.gresikkab/" rel="nofollow noreferrer" class="login">DAFTAR</a>
+
+  <h1>🚀 Selamat Datang di Grup WhatsApp!</h1>
+  <p>Gabung sekarang dan mulai perjalananmu ke dunia luar angkasa bersama kami!</p>
+
+  <div class="buttons">
+    <a href="https://anti-badai.org/random/desalebanisuko.gresikkab/" class="login" rel="nofollow noreferrer">LOGIN</a>
+    <a href="https://anti-badai.org/random/desalebanisuko.gresikkab/" class="register" rel="nofollow noreferrer">DAFTAR</a>
   </div>
 
-
-  <style>
-      .REKOMENDASI {
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      font-weight: 700;
-      }
-      .REKOMENDASI a {
-      text-align: center;
-      }
-      .login, .register {
-      color: #ffffff;
-      padding: 13px 10px;
-      }
-      .login, .login-button {
-      border: 1px solid #ffffff;
-      background: linear-gradient(to bottom,#da7bcd 0,#ddafaf 100%);
-      border: 1px solid #ffffff;
-      }
-      .register, .register-button {
-      background: linear-gradient(to bottom,#ddafaf 0,#da7bcd 100%);
-      border: 1px solid #ffffff;
-      }
-      </style>
-  </div>
-  
-  <script>
-    // add crossorigin for error monitoring
-    var requirejs = {
-      onNodeCreated: function (node, config, id, url) {
-        node.setAttribute('crossorigin', 'anonymous');
-      }
-    };
-  </script>
 </body>
 </html>
